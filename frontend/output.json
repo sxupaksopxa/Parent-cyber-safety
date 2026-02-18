@@ -1,0 +1,57 @@
+{
+  "summary": {
+    "risk_score": 72,
+    "risk_level": "High",
+    "short_overview": "Your child has their own Android phone, uses social media and public Wi-Fi, and can install apps without your approval. Some important protections like screen lock and parental controls are missing, which increases the risk of fraud, unwanted contact, and accidental exposure to harmful content."
+  },
+  "key_risks": [
+    {
+      "title": "No screen lock or PIN on the device",
+      "description": "If the phone is lost or borrowed by someone else, they can access your child's apps, photos, and messages without any barrier.",
+      "severity": "High"
+    },
+    {
+      "title": "Apps can be installed without parental approval",
+      "description": "This makes it easier for your child to install risky apps, including those with hidden chats, scams, or inappropriate content.",
+      "severity": "High"
+    }
+  ],
+  "immediate_actions": [
+    {
+      "title": "Turn on screen lock and PIN today",
+      "steps": [
+        "Open the Settings app on the Android phone.",
+        "Go to 'Security' or 'Lock screen'.",
+        "Choose a PIN, pattern, or password.",
+        "Make sure only you and your child know it and agree on when the phone can be used."
+      ]
+    }
+  ],
+  "device_specific_recommendations": [
+    {
+      "device_type": "Android phone",
+      "tips": [
+        "Enable Google Family Link to manage app installs and screen time.",
+        "Disable installation from unknown sources in the Security settings.",
+        "Turn off location sharing in social media apps unless really needed."
+      ]
+    }
+  ],
+  "online_behavior_guidance": [
+    {
+      "topic": "Social media",
+      "advice": [
+        "Set TikTok and other apps to private so only approved friends can see posts.",
+        "Review your child's friend list together and remove people you both do not know in real life."
+      ]
+    }
+  ],
+  "parent_child_conversation_tips": {
+    "tone": "Calm and curious",
+    "example_phrases": [
+      "I want to make sure your phone is safe, just like we lock the front door at home. Can we check some settings together?",
+      "If anyone online makes you feel uncomfortable or asks for secrets, you can always tell me. I am here to protect you, not to punish you."
+    ]
+  },
+  "disclaimer": "This report is general guidance based on your answers. It is not legal advice or an emergency service. If you believe your child is in immediate danger, please contact local authorities or a child protection organization."
+}

@@ -1,0 +1,65 @@
+/* ----------------------------------------------------------
+   Tailwind base styles
+----------------------------------------------------------- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----------------------------------------------------------
+   Global Brand Styling
+   Soft, gentle tone for parents and kids
+----------------------------------------------------------- */
+
+html, body {
+  @apply bg-gray-50 text-gray-900 antialiased;
+}
+
+/* Smooth transitions for interactive elements */
+button, input, select, textarea {
+  @apply transition-all duration-200 ease-in-out;
+}
+
+/* Card styling for consistent UI */
+.safe-card {
+  @apply bg-white border border-gray-200 rounded-2xl shadow-sm p-6;
+}
+
+/* Headings */
+.h1 {
+  @apply text-3xl font-semibold text-gray-900;
+}
+
+.h2 {
+  @apply text-2xl font-semibold text-gray-900;
+}
+
+.h3 {
+  @apply text-lg font-semibold text-gray-800;
+}
+
+/* Soft text styling for sensitive content */
+.text-soft {
+  @apply text-gray-600 leading-relaxed;
+}
+
+/* Subtle link style */
+.link {
+  @apply text-indigo-600 hover:text-indigo-700 underline underline-offset-2;
+}
+
+/* Loading spinner */
+.loading-spinner {
+  border: 3px solid #ddd;
+  border-top-color: #6366f1;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  animation: spin 0.7s linear infinite;
+}
+
+/* Spinner animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,24 @@
+{
+  summary: {
+    risk_score: number,
+    risk_level: "Low" | "Medium" | "High",
+    short_overview: string
+  },
+  key_risks: [
+    { title: string, description: string, severity: "Low" | "Medium" | "High" }
+  ],
+  immediate_actions: [
+    { title: string, steps: string[] }
+  ],
+  device_specific_recommendations: [
+    { device_type: string, tips: string[] }
+  ],
+  online_behavior_guidance: [
+    { topic: string, advice: string[] }
+  ],
+  parent_child_conversation_tips: {
+    tone: string,
+    example_phrases: string[]
+  },
+  disclaimer: string
+}

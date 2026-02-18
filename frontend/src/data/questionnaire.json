@@ -1,0 +1,131 @@
+{
+  "title": "Child Cyber Safety Assessment",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "age",
+      "question": "How old is your child?",
+      "type": "single",
+      "required": true,
+      "options": ["Under 6", "7–9", "10–12", "13–15", "16–18"]
+    },
+    {
+      "id": "device_ownership",
+      "question": "Does your child have their own device or share yours?",
+      "type": "single",
+      "required": true,
+      "options": ["Own device", "Shares with parent", "Shares with siblings"]
+    },
+    {
+      "id": "device_type",
+      "question": "What type of device does your child use?",
+      "type": "single",
+      "required": true,
+      "options": [
+        "Android phone",
+        "iPhone",
+        "iPad",
+        "Android tablet",
+        "Windows laptop",
+        "MacBook",
+        "Game console",
+        "Other"
+      ]
+    },
+    {
+      "id": "screen_lock",
+      "question": "Does the device have a screen lock or PIN?",
+      "type": "single",
+      "required": true,
+      "options": ["Yes", "No", "I'm not sure"]
+    },
+    {
+      "id": "app_install",
+      "question": "Can your child install apps without your approval?",
+      "type": "single",
+      "required": true,
+      "options": ["Yes", "No", "I'm not sure"]
+    },
+    {
+      "id": "parental_controls",
+      "question": "Are parental controls or family safety tools enabled?",
+      "type": "single",
+      "required": true,
+      "options": ["Yes", "Partially", "No", "I'm not sure"]
+    },
+    {
+      "id": "social_media",
+      "question": "Does your child use social media?",
+      "type": "multi",
+      "required": false,
+      "options": ["TikTok", "Instagram", "Snapchat", "WhatsApp", "Facebook", "None", "I'm not sure"]
+    },
+    {
+      "id": "photo_sharing",
+      "question": "Does your child post photos or videos online?",
+      "type": "single",
+      "required": true,
+      "options": ["Often", "Sometimes", "Rarely", "Never", "I'm not sure"]
+    },
+    {
+      "id": "online_contacts",
+      "question": "Do you know who your child talks to online?",
+      "type": "single",
+      "required": true,
+      "options": [
+        "Only real-life friends",
+        "Mixed (friends + online people)",
+        "Mostly online people",
+        "I'm not sure"
+      ]
+    },
+    {
+      "id": "unknown_callers",
+      "question": "Are unknown numbers allowed to call or message your child?",
+      "type": "single",
+      "required": true,
+      "options": ["Yes", "No", "I'm not sure"]
+    },
+    {
+      "id": "gaming_chat",
+      "question": "Does your child play online games with chat features?",
+      "type": "single",
+      "required": true,
+      "options": [
+        "Yes, with voice chat",
+        "Yes, with text chat",
+        "Yes, but chat is disabled",
+        "No",
+        "I'm not sure"
+      ]
+    },
+    {
+      "id": "public_wifi",
+      "question": "Does your child use public Wi-Fi (café, restaurant, school)?",
+      "type": "single",
+      "required": true,
+      "options": ["Often", "Sometimes", "Rarely", "Never", "I'm not sure"]
+    },
+    {
+      "id": "privacy_settings",
+      "question": "Are privacy settings set to 'Friends Only' or 'Private' on their apps?",
+      "type": "single",
+      "required": true,
+      "options": ["Yes", "Partially", "No", "I'm not sure"]
+    },
+    {
+      "id": "app_review",
+      "question": "Do you regularly check the apps installed on your child's device?",
+      "type": "single",
+      "required": true,
+      "options": ["Yes", "Sometimes", "No"]
+    },
+    {
+      "id": "online_incidents",
+      "question": "Has your child ever experienced suspicious messages, bullying, or unwanted contact?",
+      "type": "single",
+      "required": true,
+      "options": ["Yes", "Maybe / not sure", "No"]
+    }
+  ]
+}
