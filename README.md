@@ -1,2 +1,3 @@
-# Parent-cyber-safety
-Publicly open parent cyber safety project
+# Parent Cyber Safety
+
+A gentle digital tool that helps parents assess and improve their child’s online safety through practical guidance.
