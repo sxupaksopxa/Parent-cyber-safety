@@ -113,9 +113,9 @@ const QuestionnaireForm = ({ onSubmit, loading: loadingProp }) => {
           Child Cyber Safety Assessment
         </h1>
         <p className="text-gray-600 mb-6">
-          Please answer these short questions about your children, their devices, and
-          online habits. This takes about 2–3 minutes and helps us create a
-          gentle, personalized safety report for your family.
+          Please answer these short questions about one child’s devices and online habits. 
+          The assessment takes about 2–3 minutes and helps create a personalized safety report for that child.
+          If you have more than one child, you can repeat the assessment for each of them.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -165,26 +165,28 @@ const QuestionnaireForm = ({ onSubmit, loading: loadingProp }) => {
                     </label>
                   ))}
 
-                {q.type === "multi" &&
-                  q.options.map((opt) => (
-                    <label
-                      key={opt}
-                      className="flex items-center gap-2 text-sm text-gray-800 cursor-pointer"
-                    >
-                      <input
-                        type="checkbox"
-                        name={`${q.id}-${opt}`}
-                        value={opt}
-                        checked={answers[q.id]?.includes(opt)}
-                        onChange={() => handleMultiChange(q.id, opt)}
-                        disabled={loading}
-                        className="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500"
-                      />
+                {q.type === "multi" && (
+                  <div className="space-y-1">
+                    {q.options.map((opt) => (
+                      <label
+                        key={opt}
+                        className="flex items-center gap-2 p-1 text-sm text-gray-800 cursor-pointer hover:bg-gray-50 rounded-md"
+                      >
+                        <input
+                          type="checkbox"
+                          name={`${q.id}-${opt}`}
+                          value={opt}
+                          checked={(answers[q.id] || []).includes(opt)}
+                          onChange={() => handleMultiChange(q.id, opt)}
+                          disabled={loading}
+                          className="h-3.5 w-3.5 text-indigo-600 border-gray-300 focus:ring-indigo-500"
+                        />
                       <span>{opt}</span>
                     </label>
                   ))}
+                </div>
+              )}
               </div>
-
               {errors[q.id] && submittedOnce && (
                 <p className="mt-2 text-xs text-red-500">{errors[q.id]}</p>
               )}
@@ -193,9 +195,8 @@ const QuestionnaireForm = ({ onSubmit, loading: loadingProp }) => {
 
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 pt-4 border-t border-gray-100">
             <p className="text-xs text-gray-500">
-              We do not collect names, messages, or passwords. This assessment
-              is for guidance only and does not replace professional or
-              emergency support.
+              We do not collect names, messages, or passwords. 
+              This assessment provides educational guidance and does not replace professional or emergency support.
             </p>
             <button
               type="submit"
@@ -206,7 +207,7 @@ const QuestionnaireForm = ({ onSubmit, loading: loadingProp }) => {
                   : "bg-indigo-600 hover:bg-indigo-700"
               }`}
             >
-              {loading ? "Analyzing..." : "Get Safety Assessment"}
+              {loading ? "Generating report..." : "Generate Safety Report"}
             </button>
           </div>
         </form>

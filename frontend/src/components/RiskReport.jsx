@@ -221,7 +221,9 @@ const RiskReport = ({
                     className="border border-gray-200 rounded-xl p-3.5 bg-white"
                   >
                     <p className="text-sm font-semibold text-gray-900">
-                      {block.device_type}
+                      {Array.isArray(block.device_type)
+                      ? block.device_type.join(", ")
+                      : block.device_type}
                     </p>
                     {Array.isArray(block.tips) && block.tips.length > 0 && (
                       <ul className="mt-2 space-y-1.5 list-disc list-inside text-sm text-gray-800">
@@ -298,10 +300,18 @@ const RiskReport = ({
               </div>
             </section>
           )}
+          
+          {/* About this project */}
+          <section className="mt-6 bg-gray-50 border border-gray-200 rounded-xl p-3.5">
+            <p className="text-sm text-gray-600 leading-relaxed">
+              This independent project aims to help parents better understand children’s
+              digital habits and online risks through simple, privacy-friendly tools.
+            </p>
+          </section>
 
           {/* Disclaimer */}
           {disclaimer && (
-            <section className="pt-3 border-t border-gray-100">
+            <section className="pt-4 border-t border-gray-100">
               <p className="text-xs text-gray-500 leading-relaxed">
                 <strong>Important note:</strong> {disclaimer}
               </p>
@@ -309,7 +319,7 @@ const RiskReport = ({
           )}
 
           {/* Copyright */}
-          <section className="pt-4 border-t border-gray-100">
+          <section className="pt-4 border-t border-gray-100 text-center">
             <p className="text-xs text-gray-400">
               © {new Date().getFullYear()} BKlein — Developer
             </p>

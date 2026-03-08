@@ -26,6 +26,13 @@ export const QUESTION_CONFIG = {
   device_type: { domain: DOMAINS.CONTEXT, scored: false, title: "Device type" },
 
   // --- Scored questions ---
+  device_type: {
+    domain: DOMAINS.DEVICE,
+    weight: 2,
+    type: "multi",
+    title: "Devices used regularly",
+  },
+
   screen_lock: {
     domain: DOMAINS.DEVICE,
     weight: 3,

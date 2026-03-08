@@ -9,13 +9,25 @@
    Global Brand Styling
    Soft, gentle tone for parents and kids
 ----------------------------------------------------------- */
+@layer components {
+  .safe-card {
+    @apply bg-white border border-gray-200 rounded-2xl shadow-sm p-6;
+  }
+}
 
-html, body {
-  @apply bg-gray-50 text-gray-900 antialiased;
+html,
+body {
+  background-color: #f9fafb;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Smooth transitions for interactive elements */
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   @apply transition-all duration-200 ease-in-out;
 }
 
@@ -62,4 +74,19 @@ button, input, select, textarea {
   to {
     transform: rotate(360deg);
   }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 0.5s ease-out;
 }

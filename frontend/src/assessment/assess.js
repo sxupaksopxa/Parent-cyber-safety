@@ -29,6 +29,15 @@ function scoreSocialMedia(selected) {
   return 5;
 }
 
+function scoreDeviceTypes(chosen) {
+  const count = Array.isArray(chosen) ? chosen.length : 0;
+
+  if (count <= 1) return 0;
+  if (count === 2) return 1;
+  if (count === 3) return 2;
+  return 3; // 4+ devices
+}
+
 export function assessSafety(answers) {
   const entries = Object.entries(QUESTION_CONFIG);
 
@@ -54,7 +63,13 @@ export function assessSafety(answers) {
 
     let base = 0;
     if (q.type === "multi") {
-      base = scoreSocialMedia(chosen);
+      if (id === "social_media") {
+        base = scoreSocialMedia(chosen);
+      } else if (id === "device_type") {
+        base = scoreDeviceTypes(chosen);
+      } else {
+        base = 0;
+      }
     } else {
       base =
         chosen == null
@@ -109,7 +124,7 @@ export function assessSafety(answers) {
   const topRisks = perQuestion
     .filter(r => r.scored)
     .sort((a, b) => b.riskPoints - a.riskPoints)
-    .slice(0, 5);
+    .slice(0, 3);
 
   // Context (for later phases, but harmless to include now)
   const context = {

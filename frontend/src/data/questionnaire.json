@@ -18,18 +18,18 @@
     },
     {
       "id": "device_type",
-      "question": "What type of device does your child use?",
-      "type": "single",
+      "question": "Which devices does your child use regularly? (Select all that apply)",
+      "type": "multi",
       "required": true,
       "options": [
-        "Android phone",
-        "iPhone",
-        "iPad",
-        "Android tablet",
-        "Windows laptop",
-        "MacBook",
-        "Game console",
-        "Other"
+      "Smartphone",
+      "Tablet",
+      "Laptop or computer",
+      "Game console",
+      "Smart TV",
+      "Shared family device",
+      "Smartwatch",
+      "Other"
       ]
     },
     {

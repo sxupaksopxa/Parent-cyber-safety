@@ -3,6 +3,11 @@ import { assessSafety } from "./assess";
 
 // Small “risk explanation” map (NOT recommendations; just what the answer implies)
 const RISK_EXPLANATIONS = {
+  device_type: {
+    title: "Multiple device exposure",
+    describe: () =>
+      "Using several devices can increase digital exposure, screen access points, and the chance of unmanaged privacy or safety settings.",
+  },
   screen_lock: {
     title: "Device access may be unprotected",
     describe: (chosen) =>
@@ -142,6 +147,6 @@ export function buildRiskReportFromAssessment(assessment) {
     },
     key_risks,
     disclaimer:
-      "This assessment is general guidance based on your answers. It is not legal, medical, or emergency advice. If you believe your child is in immediate danger, please contact local authorities or a child protection organization.",
-  };
+            "This assessment provides general guidance based on your answers. It is not legal, medical, or emergency advice. If you believe your child may be in immediate danger, please contact local authorities or a child protection organization."
+    };
 }
