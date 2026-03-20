@@ -1,0 +1,124 @@
+{
+  "title": "child_cyber_safety_assessment",
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "age",
+      "type": "single",
+      "required": true,
+      "options": ["under_6", "age_7_9", "age_10_12", "age_13_15", "age_16_18"]
+    },
+    {
+      "id": "device_ownership",
+      "type": "single",
+      "required": true,
+      "options": ["own_device", "shares_with_parent", "shares_with_siblings"]
+    },
+    {
+      "id": "device_type",
+      "type": "multi",
+      "required": true,
+      "options": [
+        "smartphone",
+        "tablet",
+        "laptop_or_computer",
+        "game_console",
+        "smart_tv",
+        "shared_family_device",
+        "smartwatch",
+        "other"
+      ]
+    },
+    {
+      "id": "screen_lock",
+      "type": "single",
+      "required": true,
+      "options": ["yes", "no", "not_sure"]
+    },
+    {
+      "id": "app_install",
+      "type": "single",
+      "required": true,
+      "options": ["yes", "no", "not_sure"]
+    },
+    {
+      "id": "parental_controls",
+      "type": "single",
+      "required": true,
+      "options": ["yes", "partially", "no", "not_sure"]
+    },
+    {
+      "id": "social_media",
+      "type": "multi",
+      "required": false,
+      "options": [
+        "tiktok",
+        "instagram",
+        "snapchat",
+        "whatsapp",
+        "facebook",
+        "none",
+        "not_sure"
+      ]
+    },
+    {
+      "id": "photo_sharing",
+      "type": "single",
+      "required": true,
+      "options": ["often", "sometimes", "rarely", "never", "not_sure"]
+    },
+    {
+      "id": "online_contacts",
+      "type": "single",
+      "required": true,
+      "options": [
+        "only_real_life_friends",
+        "mixed_friends_and_online",
+        "mostly_online_people",
+        "not_sure"
+      ]
+    },
+    {
+      "id": "unknown_callers",
+      "type": "single",
+      "required": true,
+      "options": ["yes", "no", "not_sure"]
+    },
+    {
+      "id": "gaming_chat",
+      "type": "single",
+      "required": true,
+      "options": [
+        "yes_voice_chat",
+        "yes_text_chat",
+        "yes_chat_disabled",
+        "no",
+        "not_sure"
+      ]
+    },
+    {
+      "id": "public_wifi",
+      "type": "single",
+      "required": true,
+      "options": ["often", "sometimes", "rarely", "never", "not_sure"]
+    },
+    {
+      "id": "privacy_settings",
+      "type": "single",
+      "required": true,
+      "options": ["yes", "partially", "no", "not_sure"]
+    },
+    {
+      "id": "app_review",
+      "type": "single",
+      "required": true,
+      "options": ["yes", "sometimes", "no"]
+    },
+    {
+      "id": "online_incidents",
+      "type": "single",
+      "required": true,
+      "options": ["yes", "maybe_not_sure", "no"]
+    }
+  ]
+}

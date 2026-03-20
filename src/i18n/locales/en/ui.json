@@ -1,0 +1,677 @@
+{
+  "app": {
+    "title": "Parent Cyber Safety"
+  },
+  "buttons": {
+    "startAssessment": "Start Assessment",
+    "next": "Next",
+    "back": "Back",
+    "restart": "Restart"
+  },
+  "labels": {
+    "language": "Language"
+  },
+  "common": {
+  "riskLevels": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High"
+    } 
+  },
+  "report": {
+    "title": "Digital Safety Report",
+    "topRisks": "Top Risks",
+    "recommendations": "Recommendations"
+  },
+   "intro": {
+    "brand": "Parent Cyber Safety",
+    "title": "Digital Safety for Your Child",
+    "subtitle": "Understand easily, protect better.",
+    "paragraph1": "Children grow up in a digital world that evolves faster than most parents can follow. Devices, apps, and online platforms are all part of our everyday life, but it is not always easy to understand the risks they may bring.",
+    "paragraph2": "This short assessment helps parents reflect on their children's digital habits and receive practical guidance for creating a safer online environment at home.",
+    "meta": "• Takes about 2 minutes • Runs entirely in your browser • No personal data stored",
+    "startButton": "Start the Safety Check"
+  },
+  "notice": {
+    "text": "This tool provides general guidance and is intended to support awareness about children’s digital safety."
+  },
+  "why": {
+    "title": "Why this matters",
+    "paragraph1": "Kids don’t just “go online” anymore — they live there. Messages, videos, games, and social media have become continuous habits, and even small habits can quietly turn into real risks.",
+    "paragraph2": "This tool is here to make digital safety feel less overwhelming, and to help parents take a few practical steps to mitigate these risks.",
+    "tag1": "Simple assessment",
+    "tag2": "Practical steps",
+    "tag3": "Family-friendly guidance"
+  },
+  "roadmap": {
+    "title": "What’s next",
+    "intro": "I’m improving the tool step by step based on real feedback from parents. Planned updates include:",
+    "item1Title": "More precise recommendations",
+    "item1Text": "(device / OS specific guidance)",
+    "item2Title": "Printable safety report",
+    "item2Text": "(for parents and caregivers)",
+    "item3Title": "AI-assisted personalization",
+    "item3Text": "(planned) for more context-aware guidance"
+  },
+  "errors": {
+    "guidanceGeneration": "We couldn't generate guidance. Please try again."
+  },
+  "questionnaire": {
+    "title": "Child Cyber Safety Assessment",
+    "intro": "Please answer these short questions about one child’s devices and online habits. The assessment takes about 2–3 minutes and helps create a personalized safety report for that child. If you have more than one child, you can repeat the assessment for each of them.",
+    "multiHint": "You can choose more than one option.",
+    "requiredError": "This question is required.",
+    "privacyNote": "We do not collect names, messages, or passwords. This assessment provides educational guidance and does not replace professional or emergency support.",
+    "submitIdle": "Generate Safety Report",
+    "submitLoading": "Generating report...",
+    "demoAlert": "Thank you! Your answers were collected (demo mode).",
+    "submitError": "Something went wrong while submitting. Please try again."
+  },
+  "reportUI": {
+    "header": {
+      "title": "Your Child’s Digital Safety Assessment",
+      "intro": "This report is based on your answers and is meant to guide you in a calm, practical way. You can use it as a starting point to improve safety together with your child."
+    },
+    "summary": {
+      "title": "Overall Safety Summary",
+      "note": "This assessment reflects potential cyber exposure based on your answers. It is meant as calm guidance — not to scare or blame.",
+      "scoreSuffix": "/ 100",
+      "overallRisk": "Overall risk: {{level}}"
+    },
+    "keyRisks": {
+      "title": "Most Important Things to Be Aware Of",
+      "intro": "These are the main areas where your child may be more exposed to online risks. You don’t need to fix everything at once – start with one or two that feel most urgent.",
+      "severitySuffix": "{{severity}} risk"
+    },
+    "guidance": {
+      "title": "Step 3 (optional): Generate guidance",
+      "intro": "If you want, you can generate practical next steps based on your answers. This is optional — the assessment above already highlights the main risk areas.",
+      "buttonIdle": "Generate guidance",
+      "buttonLoading": "Generating...",
+      "skipNote": "You can skip this if you’re not ready."
+    },
+    "immediateActions": {
+      "title": "First Steps You Can Take",
+      "intro": "These are practical actions you can take in the next few days. You don’t have to be a technical expert – follow them slowly, one step at a time."
+    },
+    "deviceSpecific": {
+      "title": "Device-Specific Recommendations",
+      "intro": "These tips relate to the type of device your child uses (phone, tablet, laptop, console). You can work through them when you have the device in front of you."
+    },
+    "onlineBehavior": {
+      "title": "Online Behaviour Guidance",
+      "intro": "These notes focus on how your child uses social media, games, chat apps, and the internet in general."
+    },
+    "conversation": {
+      "title": "Talking with Your Child About Online Safety",
+      "intro": "Children often feel safer when adults stay calm, listen, and avoid blame. These are suggested ways to open the conversation.",
+      "toneLabel": "Suggested tone:"
+    },
+    "project": {
+      "about": "This independent project aims to help parents better understand children’s digital habits and online risks through simple, privacy-friendly tools."
+    },
+    "disclaimer": {
+      "importantNote": "Important note:"
+    },
+    "footer": {
+      "copyright": "© {{year}} BKlein — Developer"
+    }
+  },
+  "questions": {
+    "age": {
+      "question": "How old is your child?",
+      "options": {
+        "under_6": "Under 6",
+        "age_7_9": "7–9",
+        "age_10_12": "10–12",
+        "age_13_15": "13–15",
+        "age_16_18": "16–18"
+      }
+    },
+
+    "device_ownership": {
+      "question": "Does your child have their own device or share yours?",
+      "options": {
+        "own_device": "Own device",
+        "shares_with_parent": "Shares with parent",
+        "shares_with_siblings": "Shares with siblings"
+      }
+    },
+
+    "device_type": {
+      "question": "Which devices does your child use regularly? (Select all that apply)",
+      "options": {
+        "smartphone": "Smartphone",
+        "tablet": "Tablet",
+        "laptop_or_computer": "Laptop or computer",
+        "game_console": "Game console",
+        "smart_tv": "Smart TV",
+        "shared_family_device": "Shared family device",
+        "smartwatch": "Smartwatch",
+        "other": "Other"
+      }
+    },
+
+    "screen_lock": {
+      "question": "Does the device have a screen lock or PIN?",
+      "options": {
+        "yes": "Yes",
+        "no": "No",
+        "not_sure": "I'm not sure"
+      }
+    },
+
+    "app_install": {
+      "question": "Can your child install apps without your approval?",
+      "options": {
+        "yes": "Yes",
+        "no": "No",
+        "not_sure": "I'm not sure"
+      }
+    },
+
+    "parental_controls": {
+      "question": "Are parental controls or family safety tools enabled?",
+      "options": {
+        "yes": "Yes",
+        "partially": "Partially",
+        "no": "No",
+        "not_sure": "I'm not sure"
+      }
+    },
+
+    "social_media": {
+      "question": "Does your child use social media?",
+      "options": {
+        "tiktok": "TikTok",
+        "instagram": "Instagram",
+        "snapchat": "Snapchat",
+        "whatsapp": "WhatsApp",
+        "facebook": "Facebook",
+        "none": "None",
+        "not_sure": "I'm not sure"
+      }
+    },
+
+    "photo_sharing": {
+      "question": "Does your child post photos or videos online?",
+      "options": {
+        "often": "Often",
+        "sometimes": "Sometimes",
+        "rarely": "Rarely",
+        "never": "Never",
+        "not_sure": "I'm not sure"
+      }
+    },
+
+    "online_contacts": {
+      "question": "Do you know who your child talks to online?",
+      "options": {
+        "only_real_life_friends": "Only real-life friends",
+        "mixed_friends_and_online": "Mixed (friends + online people)",
+        "mostly_online_people": "Mostly online people",
+        "not_sure": "I'm not sure"
+      }
+    },
+    "unknown_callers": {
+      "question": "Are unknown numbers allowed to call or message your child?",
+      "options": {
+        "yes": "Yes",
+        "no": "No",
+        "not_sure": "I'm not sure"
+      }
+    },
+
+    "gaming_chat": {
+      "question": "Does your child play online games with chat features?",
+      "options": {
+        "yes_voice_chat": "Yes, with voice chat",
+        "yes_text_chat": "Yes, with text chat",
+        "yes_chat_disabled": "Yes, but chat is disabled",
+        "no": "No",
+        "not_sure": "I'm not sure"
+      }
+    },
+
+    "public_wifi": {
+      "question": "Does your child use public Wi-Fi (café, restaurant, school)?",
+      "options": {
+        "often": "Often",
+        "sometimes": "Sometimes",
+        "rarely": "Rarely",
+        "never": "Never",
+        "not_sure": "I'm not sure"
+      }
+    },
+
+    "privacy_settings": {
+      "question": "Are privacy settings set to 'Friends Only' or 'Private' on their apps?",
+      "options": {
+        "yes": "Yes",
+        "partially": "Partially",
+        "no": "No",
+        "not_sure": "I'm not sure"
+      }
+    },
+
+    "app_review": {
+      "question": "Do you regularly check the apps installed on your child's device?",
+      "options": {
+        "yes": "Yes",
+        "sometimes": "Sometimes",
+        "no": "No"
+      }
+    },
+
+    "online_incidents": {
+      "question": "Has your child ever experienced suspicious messages, bullying, or unwanted contact?",
+      "options": {
+        "yes": "Yes",
+        "maybe_not_sure": "Maybe / not sure",
+        "no": "No"
+      }
+    }
+  },
+"riskReport": {
+    "summary": {
+      "overview": {
+        "recorded": "Your answers were recorded. This assessment summarizes likely safety exposure based on the questionnaire.",
+        "low": "Overall safety looks strong. There are still a few areas you can review for extra peace of mind.",
+        "medium": "Overall safety is moderate. A few areas may benefit from small improvements and regular check-ins.",
+        "high": "Overall safety appears higher risk. Several answers suggest your child may be more exposed to online risks."
+      }
+    },
+
+    "disclaimer": {
+      "text": "This assessment provides general guidance based on your answers. It is not legal, medical, or emergency advice. If you believe your child may be in immediate danger, please contact local authorities or a child protection organization."
+    },
+    "risks": {
+      "device_type": {
+        "title": "Multiple device exposure",
+        "description": {
+          "default": "Using several devices can increase digital exposure, screen access points, and the chance of unmanaged privacy or safety settings."
+        }
+      },
+      "screen_lock": {
+        "title": "Device access may be unprotected",
+        "description": {
+          "no": "Without a screen lock, anyone holding the device can open apps, messages, and accounts.",
+          "unsure": "If you're not sure about screen lock, the device may be easier to access than expected.",
+          "default": "Device access protection may not be fully clear."
+        }
+      },
+      "app_install": {
+        "title": "Apps may be installed without supervision",
+        "description": {
+          "yes": "Installing apps without approval increases exposure to unsafe apps, ads, tracking, and inappropriate content.",
+          "unsure": "If you're not sure, it may be worth checking device permissions for app installs.",
+          "default": "App installation settings may need review."
+        }
+      },
+      "parental_controls": {
+        "title": "Family safety controls may be missing or incomplete",
+        "description": {
+          "no": "Without parental controls, it’s harder to manage screen time, app access, and age-appropriate content.",
+          "partial_or_unsure": "Partial or unknown setup can leave gaps depending on the device and apps used.",
+          "default": "Family safety controls may need review."
+        }
+      },
+      "social_media": {
+        "title": "Social platform exposure",
+        "description": {
+          "default": "Using multiple social platforms can increase contact with strangers, unwanted messages, and privacy exposure."
+        }
+      },
+      "photo_sharing": {
+        "title": "Personal content may be publicly shared",
+        "description": {
+          "often": "Frequent posting can increase privacy risk and unwanted attention, especially if profiles are not private.",
+          "other": "Posting sometimes or rarely still carries privacy risk depending on who can view the content.",
+          "default": "Shared content can increase privacy exposure."
+        }
+      },
+      "online_contacts": {
+        "title": "Online contacts may include unknown people",
+        "description": {
+          "mostly_online": "Talking mostly with online people increases the chance of unwanted contact and manipulation.",
+          "mixed": "Mixed contacts may include people you don’t know in real life.",
+          "default": "Online contacts may include unfamiliar people."
+        }
+      },
+      "unknown_callers": {
+        "title": "Unknown people may contact your child",
+        "description": {
+          "yes": "Allowing unknown numbers increases the chance of spam, scams, and unwanted contact.",
+          "unsure": "If you're not sure, the current settings may allow unknown contacts.",
+          "default": "Unknown contacts may still be possible."
+        }
+      },
+      "gaming_chat": {
+        "title": "Chat in games can create contact risk",
+        "description": {
+          "voice": "Voice chat can expose children to strangers, inappropriate language, or pressure.",
+          "text": "Text chat can expose children to strangers, unwanted messages, or bullying.",
+          "limited": "Game chat appears limited, which reduces contact risk.",
+          "default": "Game chat may increase contact exposure."
+        }
+      },
+      "public_wifi": {
+        "title": "Public Wi-Fi can increase network exposure",
+        "description": {
+          "often": "Public Wi-Fi can be less secure and may expose browsing or app traffic to interception.",
+          "other": "Occasional public Wi-Fi still carries some risk depending on the network.",
+          "default": "Public Wi-Fi can increase network risk."
+        }
+      },
+      "privacy_settings": {
+        "title": "Privacy settings may allow wider visibility",
+        "description": {
+          "no": "If apps are not private or friends-only, content may be visible to more people than intended.",
+          "partial_or_unsure": "Partial or unknown privacy settings can leave some apps more open than expected.",
+          "default": "Privacy settings may need review."
+        }
+      },
+      "app_review": {
+        "title": "Installed apps may not be regularly checked",
+        "description": {
+          "no": "If apps aren’t reviewed, risky or unnecessary apps can stay installed unnoticed.",
+          "sometimes": "Sometimes reviewing apps may miss changes over time as new apps are installed.",
+          "default": "Installed apps may need more regular review."
+        }
+      },
+      "online_incidents": {
+        "title": "Past unwanted contact or bullying risk",
+        "description": {
+          "yes": "Past incidents suggest a higher chance of repeated unwanted contact or bullying without protective changes.",
+          "uncertain": "Uncertainty can mean issues happened but weren’t clearly identified.",
+          "default": "Previous incidents may indicate an elevated risk."
+        }
+      },
+      "generic": {
+        "title": "Potential risk area",
+        "description": {
+          "default": "This area may increase exposure depending on current settings and habits."
+        }
+      }
+    }
+  },
+  "guidance": {
+  "immediateActions": {
+    "screen_lock": {
+      "title": "Turn on a screen lock",
+      "steps": [
+        "Open device Settings.",
+        "Go to Security / Lock Screen (or Face ID / Touch ID / Passcode).",
+        "Choose a PIN or passcode that your child can remember.",
+        "Explain it like locking the front door — it protects photos, messages, and apps if the device is lost."
+      ]
+    },
+    "app_install": {
+      "title": "Require approval for app installs",
+      "steps": [
+        "Enable family safety controls for the device (Screen Time / Family Link / Family Safety).",
+        "Turn on app approvals for new installs.",
+        "Review existing installed apps together and remove anything you don’t recognize."
+      ]
+    },
+    "parental_controls": {
+      "title": "Enable parental controls / family safety tools",
+      "steps": [
+        "Turn on the built-in family safety features for the device.",
+        "Set age-appropriate content restrictions and basic screen-time limits.",
+        "Start simple — you can adjust later based on what works for your family."
+      ]
+    },
+    "privacy_settings": {
+      "title": "Set apps to Private / Friends-only",
+      "steps": [
+        "Open the settings inside each social app your child uses.",
+        "Set the account to Private (or Friends-only).",
+        "Disable public profile visibility where possible.",
+        "Review who can message/comment and limit to known contacts."
+      ]
+    },
+    "unknown_callers": {
+      "title": "Limit unknown callers and messages",
+      "steps": [
+        "Enable spam/unknown caller filtering on the device.",
+        "If available, use a contacts-only mode (or block unknown callers).",
+        "Review messaging app privacy settings so only approved contacts can message."
+      ]
+    },
+    "online_contacts": {
+      "title": "Review who your child chats with online",
+      "steps": [
+        "Ask your child to show the apps they use for chatting and gaming.",
+        "Review the contact/friends list together and remove unknown people.",
+        "Agree on a simple rule: no sharing personal details online."
+      ]
+    },
+    "gaming_chat": {
+      "title": "Reduce exposure in game chat",
+      "steps": [
+        "Check game privacy settings for chat and friend requests.",
+        "Disable voice chat with strangers (or limit chat to friends).",
+        "Remind your child not to share personal information in chats."
+      ]
+    },
+    "public_wifi": {
+      "title": "Make public Wi-Fi use safer",
+      "steps": [
+        "Turn off auto-join for open Wi-Fi networks.",
+        "Avoid logging into sensitive accounts on public Wi-Fi when possible.",
+        "If your family uses public Wi-Fi often, consider a reputable VPN later."
+      ]
+    },
+    "photo_sharing": {
+      "title": "Reduce privacy exposure from photo/video sharing",
+      "steps": [
+        "Disable location tagging in the camera and social apps.",
+        "Set who can view posts to Friends-only / Private.",
+        "Agree on a pause-and-check habit before posting personal photos."
+      ]
+    },
+    "app_review": {
+      "title": "Set a simple routine to review installed apps",
+      "steps": [
+        "Once a month, review installed apps together for 5 minutes.",
+        "Remove apps your child doesn’t use or that feel uncomfortable.",
+        "Check app permissions and turn off what isn’t needed."
+      ]
+    },
+    "online_incidents": {
+      "title": "Create a safe reporting path for incidents",
+      "steps": [
+        "Let your child know they can tell you about bullying or unwanted messages without getting in trouble.",
+        "Save evidence (screenshots) if something concerning happens.",
+        "Block/report accounts within the app and adjust privacy settings afterward."
+      ]
+    },
+    "social_media": {
+      "title": "Review social media exposure",
+      "steps": [
+        "Check which platforms are used and what the profiles look like from an outsider view.",
+        "Set accounts to Private / Friends-only and limit who can message.",
+        "Review followers/friends and remove unknown contacts."
+      ]
+    },
+    "baseline_check": {
+      "title": "Start with a quick safety check",
+      "steps": [
+        "Confirm the device has a screen lock.",
+        "Review privacy settings on the main apps.",
+        "Check that app installs require parent approval where available."
+      ]
+    }
+  },
+
+  "deviceSpecific": {
+  "mobile": {
+    "label": "Smartphone or tablet",
+    "tips": [
+      "Enable a screen lock using a PIN, fingerprint, or face unlock.",
+      "Turn on built-in parental controls such as Screen Time (Apple) or Family Link (Android).",
+      "Review app permissions for camera, microphone, location, and photos.",
+      "Disable installation from unknown sources where possible.",
+      "Allow app installations only with parental approval."
+    ]
+  },
+
+  "computer": {
+    "label": "Laptop or computer",
+    "tips": [
+      "Use a standard (non-administrator) account for the child.",
+      "Enable operating system updates and built-in security protections.",
+      "Use family safety or parental control tools if available.",
+      "Review installed programs together and remove anything unfamiliar.",
+      "Review browser safety settings and safe-browsing protections."
+    ]
+  },
+
+  "console": {
+    "label": "Game console",
+    "tips": [
+      "Enable parental controls and set a PIN.",
+      "Limit voice chat with strangers or restrict chat to friends only.",
+      "Review privacy settings for friend requests and messaging.",
+      "Agree on clear rules for screen time and online contacts.",
+      "Check age ratings and content restrictions for games."
+    ]
+  },
+
+  "smart_tv": {
+    "label": "Smart TV",
+    "tips": [
+      "Review installed streaming apps and remove unused ones.",
+      "Enable parental controls or content restrictions if available.",
+      "Ensure automatic system updates are enabled.",
+      "Monitor which services your child can access.",
+      "Talk together about which content is appropriate."
+    ]
+  },
+
+  "smartwatch": {
+    "label": "Smartwatch",
+    "tips": [
+      "Review contact permissions and messaging settings.",
+      "Disable communication with unknown contacts if possible.",
+      "Check location sharing settings.",
+      "Talk with your child about when and with whom the watch is used.",
+      "Keep device software updated."
+    ]
+  },
+
+  "generic": {
+    "label": "Your device",
+    "tips": [
+      "Ensure a screen lock is enabled.",
+      "Keep automatic updates on.",
+      "Review app permissions and privacy settings regularly.",
+      "Talk with your child about how to use the device safely."
+    ]
+  }
+},
+
+  "behavior": {
+    "social_media_safety": {
+      "topic": "Social media safety",
+      "advice": [
+        "Set profiles to Private / Friends-only where possible.",
+        "Disable location tagging for posts and stories.",
+        "Review followers/friends together and remove unknown people.",
+        "Talk with your child about what should be shared online — and what is better kept private.",
+        "Limit who can message your child."
+      ]
+    },
+    "social_media_visibility_check": {
+      "topic": "Social media visibility check",
+      "advice": [
+        "Ask your child which apps they use to post or message friends.",
+        "Explain who can see their posts and why private settings are often safer.",
+        "Check together whether accounts are public and switch them to “Private” or “Friends only” if needed."
+      ]
+    },
+    "photo_video_sharing": {
+      "topic": "Photo and video sharing",
+      "advice": [
+        "Avoid sharing personal details in photos.",
+        "Turn off location in the camera app and in social apps.",
+        "Agree on a simple rule: ask before posting a new photo or video.",
+        "Talk about which photos are better not shared publicly (e.g., school, home address, or private places)."
+      ]
+    },
+    "chat_and_contacts": {
+      "topic": "Chat and contacts",
+      "advice": [
+        "Keep friend lists to people your child knows in real life when possible.",
+        "Teach a clear rule: never share address, school, phone number, or meeting plans online.",
+        "Encourage your child to tell you if someone makes them uncomfortable."
+      ]
+    },
+    "gaming_and_chat": {
+      "topic": "Gaming and chat",
+      "advice": [
+        "Limit chat to friends-only where the game allows it.",
+        "Disable voice chat with strangers.",
+        "Remind your child not to share personal details in chat.",
+        "Agree on clear rules for screen time and online contacts."
+      ]
+    },
+    "public_wifi": {
+      "topic": "Public Wi-Fi",
+      "advice": [
+        "Turn off auto-join for open Wi-Fi networks.",
+        "Avoid logging into sensitive accounts on public Wi-Fi when possible.",
+        "Talk with your child about when public Wi-Fi can be used safely.",
+        "If your child often uses public Wi-Fi, you can consider using a trusted VPN."
+      ]
+    },
+    "healthy_digital_habits": {
+      "topic": "Healthy digital safety habits",
+      "advice": [
+        "Only answer calls or messages from people you recognize, or check with a parent first.",
+        "Share photos or videos only with people you know and trust in real life.",
+        "If a message asks you to act quickly or keep secrets, pause and involve a parent.",
+        "Only accept new chat contacts if you know them personally.",
+        "If something feels unusual or uncomfortable, tell a parent.",
+        "Talk regularly about what your child experiences online and what feels good or uncomfortable."
+      ]
+    }
+  },
+
+  "conversation": {
+    "tone": {
+      "calm": "Calm, encouraging, and non-judgmental",
+      "supportive": "Calm, supportive, and reassuring"
+    },
+    "base": {
+      "1": "I want your device to feel safe for you — can we look at a few settings together?",
+      "2": "You’re not in trouble. I’m here to support you if anything online feels weird or uncomfortable.",
+      "3": "If someone online asks personal questions, what do you think is a safe response?",
+      "4": "You can always come to me if something doesn’t feel right — we’ll look at it together."
+    },
+    "younger": {
+      "1": "If a stranger sends a message, what should we do together?",
+      "2": "It’s always okay to tell me — even if you clicked something by accident.",
+      "3": "If something doesn’t feel right, we’ll look at it together."
+    },
+    "teen": {
+      "1": "If someone pressures you to share photos or meet up, you can tell me — I’ll help, not judge.",
+      "2": "Let’s agree on what’s okay to share online and what stays private.",
+      "3": "If something feels off, you don’t have to deal with it alone — we’ll find a solution together."
+    },
+    "incident": {
+      "1": "Thank you for telling me. You did the right thing — we’ll handle it together.",
+      "2": "Let’s save evidence and block or report the account if needed.",
+      "3": "You’re not alone — we’ll find a good solution together."
+    }
+  },
+
+  "validation": {
+    "required": "This question is required."
+  },
+  "setError": {
+    "required": "There was a problem generating the report. Please try again."
+  }
+ }
+}

@@ -1,0 +1,650 @@
+{
+  "labels": {
+    "language": "Sprache"
+  },
+  "intro": {
+    "brand": "Parent Cyber Safety",
+    "title": "Digitale Sicherheit für Ihr Kind",  
+    "subtitle": "Einfach verstehen, besser schützen",     
+    "paragraph1": "Kinder wachsen heute in einer digitalen Welt auf, die sich sehr schneller entwickelt. Viele Eltern können damit nicht Schritt halten. Geräte, Apps und Online-Plattformen gehören zum Alltag – die damit verbundenen Risiken sind jedoch nicht immer leicht zu erkennen.",
+    "paragraph2": "Dieser kurze Sicherheitscheck hilft Ihnen, die digitalen Gewohnheiten Ihres Kindes besser zu verstehen und gibt Ihnen praktische Hinweise für mehr Sicherheit im Alltag.",
+    "meta": "• Dauert etwa 2 Minuten • Läuft vollständig im Browser • Keine persönlichen Daten werden gespeichert",
+    "startButton": "Sicherheitscheck starten"
+  },
+  "notice": {
+    "text": "Dieses Tool bietet allgemeine Orientierung und soll das Bewusstsein für die digitale Sicherheit von Kindern unterstützen."
+  },
+  "why": {
+    "title": "Warum ist es wichtig",
+    "paragraph1": "Kinder sind heute nicht nur „online“ – sie leben dort. Nachrichten, Videos, Spiele und soziale Medien gehören zum Alltag. Dabei können selbst kleine Gewohnheiten unbemerkt zu echten Risiken werden.",
+    "paragraph2": "Dieses Tool hilft Ihnen, die digitale Sicherheit besser zu verstehen und zeigt Ihnen praktische Schritte, die Sie direkt umsetzen können.",
+    "tag1": "Einfacher Sicherheitscheck",
+    "tag2": "Praktische Schritte",
+    "tag3": "Familienfreundliche Hinweise"
+  },
+  "common": {
+  "riskLevels": {
+    "low": "Niedrig",
+    "medium": "Mittel",
+    "high": "Hoch"
+    }
+  },
+  "roadmap": {
+    "title": "Was kommt als Nächstes",
+    "intro": "Ich entwickle dieses Tool Schritt für Schritt weiter – basierend auf dem Feedback der Eltern.",
+    "item1Title": "Genaue Empfehlungen",
+    "item1Text": "(geräte- / betriebssystemspezifische Hinweise)",
+    "item2Title": "Sicherheitsbericht zum Ausdrucken",
+    "item2Text": "(für Eltern und Betreuungspersonen)",
+    "item3Title": "KI-gestützte Personalisierung",
+    "item3Text": "(geplant) für kontextbezogenere Hinweise"
+  },
+  "questionnaire": {
+    "title": "Bewertung der digitalen Sicherheit von Kindern",
+    "intro": "Bitte beantworten Sie diese kurzen Fragen zu den Geräten und Online-Gewohnheiten Ihres Kindes. Der Check dauert etwa 2–3 Minuten und hilft dabei, einen personalisierten Sicherheitsbericht für dieses Kind zu erstellen. Wenn Sie mehr als ein Kind haben, können Sie die Einschätzung für jedes Kind wiederholen.",
+    "multiHint": "Sie können mehr als eine Option auswählen.",
+    "requiredError": "Bitte beantworten Sie diese Frage.",
+    "privacyNote": "Wir erfassen keine Namen, Nachrichten oder Passwörter. Dieser Check dient der Orientierung und ersetzt keine professionelle Beratung oder Notfallhilfe.",
+    "submitIdle": "Sicherheitsbericht erstellen",
+    "submitLoading": "Bericht wird erstellt...",
+    "demoAlert": "Vielen Dank! Ihre Antworten wurden erfasst (Demo-Modus).",
+    "submitError": "Beim Erstellen des Berichts ist ein Problem aufgetreten. Bitte versuchen Sie es noch einmal."
+  },
+  "questions": {
+    "age": {
+      "question": "Wie alt ist Ihr Kind?",
+      "options": {
+        "under_6": "Unter 6",
+        "age_7_9": "7–9",
+        "age_10_12": "10–12",
+        "age_13_15": "13–15",
+        "age_16_18": "16–18"
+      }
+    },
+    
+    "device_ownership": {
+      "question": "Hat Ihr Kind ein eigenes Gerät oder nutzt es ein anderes mit?",
+      "options": {
+        "own_device": "Eigenes Gerät",
+        "shares_with_parent": "Teilt es mit einem Elternteil",
+        "shares_with_siblings": "Teilt es mit Geschwistern"
+      }
+    },
+    "device_type": {
+      "question": "Welche Geräte nutzt Ihr Kind regelmäßig? (Mehrere Antworten möglich)",
+      "options": {
+        "smartphone": "Smartphone",
+        "tablet": "Tablet",
+        "laptop_or_computer": "Laptop oder Computer",
+        "game_console": "Spielkonsole",
+        "smart_tv": "Smart-TV",
+        "shared_family_device": "Gemeinsam genutztes Familiengerät",
+        "smartwatch": "Smartwatch",
+        "other": "Andere"
+      }
+    },
+    "screen_lock": {
+      "question": "Ist das Gerät mit einer Bildschirmsperre oder PIN gesichert?",
+      "options": {
+        "yes": "Ja",
+        "no": "Nein",
+        "not_sure": "Nicht sicher"
+      }
+    },
+    "app_install": {
+      "question": "Kann Ihr Kind Apps ohne Ihre Zustimmung installieren?",
+      "options": {
+        "yes": "Ja",
+        "no": "Nein",
+        "not_sure": "Nicht sicher"
+      }
+    },
+    "parental_controls": {
+      "question": "Sind Jugendschutz- oder Familien-Sicherheitstools aktiviert?",
+      "options": {
+        "yes": "Ja",
+        "partially": "Teilweise",
+        "no": "Nein",
+        "not_sure": "Nicht sicher"
+      }
+    },
+    "social_media": {
+      "question": "Nutzt Ihr Kind soziale Medien?",
+      "options": {
+        "tiktok": "TikTok",
+        "instagram": "Instagram",
+        "snapchat": "Snapchat",
+        "whatsapp": "WhatsApp",
+        "facebook": "Facebook",
+        "none": "Keine",
+        "not_sure": "Nicht sicher"
+      }
+    },
+    "photo_sharing": {
+      "question": "Veröffentlicht Ihr Kind Fotos oder Videos online?",
+      "options": {
+        "often": "Oft",
+        "sometimes": "Manchmal",
+        "rarely": "Selten",
+        "never": "Nie",
+        "not_sure": "Nicht sicher"
+      }
+    },
+    "online_contacts": {
+      "question": "Wissen Sie, mit wem Ihr Kind online Kontakt hat?",
+      "options": {
+        "only_real_life_friends": "Nur Freundinnen und Freunde aus dem echten Leben",
+        "mixed_friends_and_online": "Gemischt (Freunde aus dem echten Leben und Online-Kontakte)",
+        "mostly_online_people": "Überwiegend Online-Kontakte",
+        "not_sure": "Nicht sicher"
+      }
+    },
+    "unknown_callers": {
+      "question": "Dürfen unbekannte Nummern Ihr Kind anrufen oder ihm Nachrichten senden?",
+      "options": {
+        "yes": "Ja",
+        "no": "Nein",
+        "not_sure": "Nicht sicher"
+      }
+    },
+    "gaming_chat": {
+      "question": "Spielt Ihr Kind Online-Spiele mit Chat-Funktionen?",
+      "options": {
+        "yes_voice_chat": "Ja, mit Sprachchat",
+        "yes_text_chat": "Ja, mit Textchat",
+        "yes_chat_disabled": "Ja, aber der Chat ist deaktiviert",
+        "no": "Nein",
+        "not_sure": "Nicht sicher"
+      }
+    },
+    "public_wifi": {
+      "question": "Nutzt Ihr Kind öffentliches WLAN (z. B. im Café, Restaurant oder in der Schule)?",
+      "options": {
+        "often": "Oft",
+        "sometimes": "Manchmal",
+        "rarely": "Selten",
+        "never": "Nie",
+        "not_sure": "Nicht sicher"
+      }
+    },
+    "privacy_settings": {
+      "question": "Sind die Privatsphäre-Einstellungen in den Apps auf „Nur Freunde“ oder „Privat“ gesetzt?",
+      "options": {
+        "yes": "Ja",
+        "partially": "Teilweise",
+        "no": "Nein",
+        "not_sure": "Nicht sicher"
+      }
+    },
+    "app_review": {
+      "question": "Prüfen Sie regelmäßig die Apps auf dem Gerät Ihres Kindes?",
+      "options": {
+        "yes": "Ja",
+        "sometimes": "Manchmal",
+        "no": "Nein"
+      }
+    },
+    "online_incidents": {
+      "question": "Hat Ihr Kind schon einmal verdächtige Nachrichten, Mobbing oder unerwünschte Kontakte erlebt?",
+      "options": {
+        "yes": "Ja",
+        "maybe_not_sure": "Vielleicht / Nicht sicher",
+        "no": "Nein"
+      }
+    }
+  },
+  "riskReport": {
+    "summary": {
+      "overview": {
+        "recorded": "Ihre Antworten wurden erfasst. Diese Einschätzung fasst die wahrscheinliche Sicherheitsgefährdung auf Grundlage des Fragebogens zusammen.",
+        "low": "Die allgemeine Sicherheit wirkt gut. Es gibt dennoch einige Bereiche, die Sie zur zusätzlichen Absicherung prüfen können.",
+        "medium": "Die allgemeine Sicherheit ist mittelmäßig. Einige Bereiche könnten von kleinen Verbesserungen und regelmäßigen Überprüfungen profitieren.",
+        "high": "Die allgemeine Sicherheit erscheint risikoreich. Mehrere Antworten deuten darauf hin, dass Ihr Kind hohen Online-Risiken ausgesetzt sein könnte."
+      }
+    },
+    "disclaimer": {
+      "text": "Diese Einschätzung bietet allgemeine Orientierung auf Grundlage Ihrer Antworten. Sie ist keine rechtliche, medizinische oder Notfallberatung. Wenn Sie glauben, dass Ihr Kind sich in unmittelbarer Gefahr befindet, wenden Sie sich bitte an die zuständigen Behörden oder an eine Kinderschutzorganisation."
+    },
+    "risks": {
+      "device_type": {
+        "title": "Nutzung mehrerer Geräte",
+        "description": {
+          "default": "Die Nutzung mehrerer Geräte kann die digitale Exposition, die Anzahl der Zugänge und das Risiko unzureichender Datenschutz- oder Sicherheitseinstellungen erhöhen."
+        }
+      },
+      "screen_lock": {
+        "title": "Gerätezugang ist möglicherweise ungeschützt",
+        "description": {
+          "no": "Ohne Bildschirmsperre kann jede Person mit dem Gerät auf Apps, Nachrichten und Konten zugreifen.",
+          "unsure": "Wenn Sie sich bei der Bildschirmsperre nicht sicher sind, ist das Gerät möglicherweise leichter zugänglich als erwartet.",
+          "default": "Der Zugriffsschutz des Geräts ist möglicherweise nicht ausreichend."
+        }
+      },
+      "app_install": {
+        "title": "Apps könnten ohne Aufsicht installiert werden",
+        "description": {
+          "yes": "Wenn Apps ohne Zustimmung installiert werden können, erhöht das die Gefahr durch unsichere Apps, Werbung, Tracking und ungeeignete Inhalte.",
+          "unsure": "Wenn Sie sich nicht sicher sind, lohnt es sich, die Berechtigungen für App-Installationen auf dem Gerät zu prüfen.",
+          "default": "Die Einstellungen für App-Installationen sollten überprüft werden."
+        }
+      },
+      "parental_controls": {
+        "title": "Familienschutz-Einstellungen fehlen möglicherweise oder sind unvollständig",
+        "description": {
+          "no": "Ohne Jugendschutz-Einstellungen ist es schwieriger, Bildschirmzeit, App-Zugriffe und altersgerechte Inhalte zu steuern.",
+          "partial_or_unsure": "Teilweise oder unklare Einstellungen können je nach Gerät und Apps Sicherheitslücken lassen.",
+          "default": "Die Familienschutz-Einstellungen sollten überprüft werden."
+        }
+      },
+      "social_media": {
+        "title": "Risiken durch soziale Plattformen",
+        "description": {
+          "default": "Die Nutzung mehrerer sozialer Plattformen kann den Kontakt mit Fremden, unerwünschte Nachrichten und Datenschutzrisiken erhöhen."
+        }
+      },
+      "photo_sharing": {
+        "title": "Persönliche Inhalte könnten öffentlich geteilt werden",
+        "description": {
+          "often": "Häufiges Posten kann das Datenschutzrisiko und unerwünschte Aufmerksamkeit erhöhen, besonders wenn Profile nicht privat sind.",
+          "other": "Auch gelegentliches oder seltenes Posten birgt Datenschutzrisiken – abhängig davon, wer die Inhalte sehen kann.",
+          "default": "Geteilte Inhalte können die Privatsphäre beeinträchtigen."
+        }
+      },
+      "online_contacts": {
+        "title": "Online-Kontakte können unbekannte Personen einschließen",
+        "description": {
+          "mostly_online": "Wenn Ihr Kind überwiegend mit Online-Kontakten spricht, steigt das Risiko unerwünschter Kontakte und Manipulation.",
+          "mixed": "Gemischte Kontakte können Personen einschließen, die Sie im echten Leben nicht kennen.",
+          "default": "Online-Kontakte können unbekannte Personen umfassen."
+        }
+      },
+      "unknown_callers": {
+        "title": "Unbekannte Personen könnten Ihr Kind kontaktieren",
+        "description": {
+          "yes": "Wenn unbekannte Nummern erlaubt sind, erhöht das das Risiko für Spam, Betrug und unerwünschte Kontakte.",
+          "unsure": "Wenn Sie sich nicht sicher sind, könnten die aktuellen Einstellungen unbekannte Kontakte zulassen.",
+          "default": "Unbekannte Kontakte könnten weiterhin möglich sein."
+        }
+      },
+      "gaming_chat": {
+        "title": "Chats in Spielen können Kontaktrisiken schaffen",
+        "description": {
+          "voice": "Sprachchat kann Kinder Fremden, unangemessener Sprache oder sozialem Druck aussetzen.",
+          "text": "Textchat kann Kinder Fremden, unerwünschten Nachrichten oder Mobbing aussetzen.",
+          "limited": "Der Spiel-Chat scheint eingeschränkt zu sein, was das Kontaktrisiko reduziert.",
+          "default": "Spiel-Chats können die Kontaktgefährdung erhöhen."
+        }
+      },
+      "public_wifi": {
+        "title": "Öffentliches WLAN kann Netzwerk-Risiken erhöhen",
+        "description": {
+          "often": "Öffentliches WLAN ist oft weniger sicher und kann Browser- oder App-Daten anfälliger für Abfangen machen.",
+          "other": "Auch gelegentliche Nutzung von öffentlichem WLAN birgt je nach Netzwerk gewisse Risiken.",
+          "default": "Öffentliches WLAN kann Netzwerk-Risiken erhöhen."
+        }
+      },
+      "privacy_settings": {
+        "title": "Privatsphäre-Einstellungen könnten zu große Sichtbarkeit erlauben",
+        "description": {
+          "no": "Wenn Apps nicht auf privat oder nur für Freunde eingestellt sind, könnten Inhalte für mehr Personen sichtbar sein als beabsichtigt.",
+          "partial_or_unsure": "Teilweise oder unklare Privatsphäre-Einstellungen können einige Apps offener machen als erwartet.",
+          "default": "Die Privatsphäre-Einstellungen sollten überprüft werden."
+        }
+      },
+      "app_review": {
+        "title": "Installierte Apps werden möglicherweise nicht regelmäßig geprüft",
+        "description": {
+          "no": "Wenn Apps nicht überprüft werden, können riskante oder unnötige Apps unbemerkt installiert bleiben.",
+          "sometimes": "Gelegentliche Kontrollen können Veränderungen übersehen, wenn neue Apps installiert werden.",
+          "default": "Installierte Apps sollten regelmäßiger überprüft werden."
+        }
+      },
+      "online_incidents": {
+        "title": "Frühere unerwünschte Kontakte oder Mobbing-Risiken",
+        "description": {
+          "yes": "Frühere Vorfälle können auf ein erhöhtes Risiko für erneute unerwünschte Kontakte oder Mobbing hindeuten, wenn keine Schutzmaßnahmen folgen.",
+          "uncertain": "Unsicherheit kann bedeuten, dass Probleme aufgetreten sind, aber nicht klar erkannt wurden.",
+          "default": "Frühere Vorfälle können auf ein erhöhtes Risiko hinweisen."
+        }
+      },
+      "generic": {
+        "title": "Möglicher Risikobereich",
+        "description": {
+          "default": "Dieser Bereich kann je nach aktuellen Einstellungen und Gewohnheiten die Gefährdung erhöhen."
+        }
+      }
+    }
+ },
+    "reportUI": {
+      "header": {
+      "title": "Bewertung der digitalen Sicherheit Ihres Kindes",
+      "intro": "Dieser Bericht basiert auf Ihren Antworten und soll Sie auf praktische Weise unterstützen. Sie können ihn als Ausgangspunkt nutzen, um die Sicherheit gemeinsam mit Ihrem Kind zu verbessern."
+    },
+    "summary": {
+    "title": "Allgemeine Sicherheitsübersicht",
+    "note": "Diese Einschätzung basiert auf Ihren Antworten und soll Ihnen Orientierung geben – nicht verunsichern oder Schuld zuweisen.",
+    "scoreSuffix": "/ 100",
+    "overallRisk": "Gesamtrisiko: {{level}}",
+    "overview": {
+      "recorded": "Ihre Antworten wurden erfasst. Diese Einschätzung gibt einen Überblick über mögliche Online-Risiken auf Grundlage des Fragebogens.",
+      "low": "Die allgemeine Sicherheit wirkt gut. Es gibt nur wenige Bereiche, die Sie bei Bedarf zusätzlich überprüfen können.",
+      "medium": "Die allgemeine Sicherheit ist insgesamt solide. Einige Bereiche könnten durch kleine Anpassungen und regelmäßige Überprüfungen weiter verbessert werden.",
+      "high": "Die allgemeine Sicherheit wirkt aktuell erhöht. Einige Antworten deuten darauf hin, dass Ihr Kind stärker Online-Risiken ausgesetzt sein könnte."
+      }
+    },
+    "keyRisks": {
+    "title": "Wichtige Punkte im Überblick",
+    "intro": "Diese Bereiche verdienen besondere Aufmerksamkeit. Sie müssen nicht alles auf einmal angehen – beginnen Sie mit ein oder zwei Punkten, die für Sie aktuell am wichtigsten sind.",
+    "severitySuffix": "{{severity}}"
+    },
+    "guidance": {
+      "title": "Schritt 3 (optional): Empfehlungen anzeigen",
+      "intro": "Auf Wunsch können Sie auf Grundlage Ihrer Antworten konkrete nächste Schritte erhalten. Dieser Schritt ist optional – die Einschätzung oben zeigt bereits die wichtigsten Punkte.",
+      "buttonIdle": "Empfehlungen anzeigen",
+      "buttonLoading": "Empfehlungen werden erstellt...",
+      "skipNote": "Sie können diesen Schritt jederzeit überspringen."
+    },
+    "immediateActions": {
+       "title": "Erste Schritte für mehr Sicherheit",
+       "intro": "Diese einfachen Schritte können Sie in den nächsten Tagen umsetzen. Sie müssen kein Technikprofi sein – gehen Sie Schritt für Schritt vor."
+    },
+    "deviceSpecific": {
+      "title": "Gerätespezifische Empfehlungen",
+      "intro": "Diese Hinweise beziehen sich auf die Geräte Ihres Kindes (z. B. Smartphone, Tablet, Laptop oder Konsole). Am einfachsten lassen sich die Schritte direkt am Gerät umsetzen."
+    },
+    "onlineBehavior": {
+      "title": "Hinweise zum Online-Verhalten",
+      "intro": "Diese Hinweise beziehen sich darauf, wie Ihr Kind soziale Medien, Spiele, Chat-Apps und das Internet nutzt."
+    },
+    "conversation": {
+      "title": "Mit Ihrem Kind über Online-Sicherheit sprechen",
+      "intro": "Kinder fühlen sich sicherer, wenn Erwachsene ruhig bleiben und zuhören. Diese Hinweise helfen Ihnen, ein offenes Gespräch zu beginnen.",
+      "toneLabel": "Empfohlener Ton:"
+    },
+    "project": {
+      "about": "Dieses unabhängige Projekt unterstützt Eltern dabei, digitale Gewohnheiten und mögliche Online-Risiken ihrer Kinder besser zu verstehen – einfach und datenschutzfreundlich."
+    },
+    "disclaimer": {
+      "importantNote": "Wichtiger Hinweis:",
+      "text": "Diese Einschätzung dient der allgemeinen Orientierung auf Grundlage Ihrer Antworten. Sie ersetzt keine rechtliche, medizinische oder Notfallberatung. Wenn Sie den Eindruck haben, dass Ihr Kind sich in unmittelbarer Gefahr befindet, wenden Sie sich bitte an die zuständigen Behörden oder eine geeignete Kinderschutzorganisation."
+    },
+    "footer": {
+      "copyright": "© {{year}} BKlein — Entwickler"
+    }
+  },
+  "guidance": {
+  "immediateActions": {
+    "screen_lock": {
+      "title": "Bildschirmsperre aktivieren",
+      "steps": [
+        "Öffnen Sie die Einstellungen.",
+        "Gehen Sie zu „Sicherheit“ oder „Bildschirmsperre“.",
+        "Wählen Sie einen PIN oder einen Code, den sich Ihr Kind gut merken kann.",
+        "Erklären Sie: Das ist wie eine Haustür – es schützt alles auf dem Gerät."
+      ]
+    },
+    "app_install": {
+    "title": "App-Installationen nur mit Zustimmung erlauben",
+    "steps": [
+      "Aktivieren Sie Familien- oder Jugendschutzfunktionen auf dem Gerät (z. B. Screen Time, Family Link oder Family Safety).",
+      "Legen Sie fest, dass neue Apps nur nach Ihrer Zustimmung installiert werden können.",
+      "Prüfen Sie gemeinsam bereits installierte Apps und entfernen Sie alles, was Ihnen unbekannt erscheint."
+      ]
+    },
+    "parental_controls": {
+      "title": "Jugendschutz- / Familienschutzfunktionen aktivieren",
+      "steps": [
+        "Aktivieren Sie die Jugendschutz- und Familienfunktionen des Geräts.",
+        "Legen Sie einfache Regeln für Inhalte und Bildschirmzeit fest.",
+        "Starten Sie mit wenigen Einstellungen – Sie können alles später in Ruhe anpassen."
+      ]
+    },
+    "privacy_settings": {
+      "title": "Apps auf Privat / Nur Freunde einstellen",
+      "steps": [
+        "Öffnen Sie die Einstellungen in den sozialen Apps Ihres Kindes.",
+        "Stellen Sie das Konto auf „Privat“ oder „Nur Freunde“.",
+        "Schalten Sie öffentliche Profile aus, wenn möglich.",
+        "Legen Sie fest, wer Nachrichten senden oder kommentieren darf."
+      ]
+    },
+    "unknown_callers": {
+      "title": "Unbekannte Anrufe und Nachrichten einschränken",
+      "steps": [
+        "Aktivieren Sie Spam- oder Filterfunktionen für unbekannte Anrufe.",
+        "Nutzen Sie – wenn möglich – einen Modus nur für Kontakte.",
+        "Legen Sie fest, dass nur bekannte Kontakte Nachrichten senden dürfen."
+      ]
+    },
+    "online_contacts": {
+      "title": "Prüfen, mit wem Ihr Kind online schreibt",
+      "steps": [
+        "Bitten Sie Ihr Kind, Ihnen die Apps zu zeigen, die es zum Chatten oder Spielen nutzt.",
+        "Gehen Sie gemeinsam die Kontakt- oder Freundeslisten durch und entfernen Sie unbekannte Personen.",
+        "Vereinbaren Sie eine einfache Regel: Persönliche Daten werden online nicht geteilt."
+      ]
+    },
+    "gaming_chat": {
+      "title": "Kontaktrisiken in Spiel-Chats reduzieren",
+      "steps": [
+        "Prüfen Sie die Privatsphäre-Einstellungen des Spiels für Chats und Freundschaftsanfragen.",
+        "Schränken Sie den Sprachchat mit Fremden ein oder erlauben Sie Chats nur mit Freunden.",
+        "Erklären Sie Ihrem Kind, keine persönlichen Informationen im Chat zu teilen."
+      ]
+    },
+    "public_wifi": {
+      "title": "Öffentliches WLAN sicherer nutzen",
+      "steps": [
+        "Deaktivieren Sie die automatische Verbindung zu offenen WLAN-Netzen.",
+        "Melden Sie sich möglichst nicht bei sensiblen Konten über öffentliches WLAN an.",
+        "Wenn Sie öffentliches WLAN häufiger nutzen, kann ein seriöses VPN sinnvoll sein."
+      ]
+    },
+    "photo_sharing": {
+      "title": "Privatsphäre beim Teilen von Fotos und Videos besser schützen",
+      "steps": [
+        "Deaktivieren Sie Standort-Tags in Kamera- und Social-Media-Apps.",
+        "Stellen Sie Beiträge auf „Nur Freunde“ oder „Privat“.",
+        "Vereinbaren Sie eine einfache Regel: kurz innehalten und prüfen, bevor etwas gepostet wird."
+      ]
+    },
+    "app_review": {
+      "title": "Einfache Routine zur App-Prüfung einführen",
+      "steps": [
+        "Nehmen Sie sich einmal im Monat kurz Zeit, um gemeinsam die Apps zu prüfen.",
+        "Entfernen Sie Apps, die nicht genutzt werden oder ungeeignet sind.",
+        "Schalten Sie unnötige Berechtigungen aus (z. B. Kamera oder Standort)."
+      ]
+    },
+    "online_incidents": {
+      "title": "Sicheren Weg zum Melden von Vorfällen schaffen",
+      "steps": [
+        "Sagen Sie Ihrem Kind, dass es jederzeit über unangenehme Erfahrungen sprechen kann – ohne Angst vor Konsequenzen.",
+        "Sichern Sie wichtige Beweise, z. B. durch Screenshots.",
+        "Blockieren oder melden Sie problematische Kontakte und überprüfen Sie anschließend die Einstellungen."
+      ]
+    },
+    "social_media": {
+      "title": "Risiken in sozialen Medien gemeinsam prüfen",
+      "steps": [
+        "Prüfen Sie gemeinsam, welche Plattformen genutzt werden und wie die Profile wirken.",
+        "Stellen Sie Konten auf „Privat“ oder „Nur Freunde“.",
+        "Entfernen Sie unbekannte Kontakte aus den Follower- und Freundeslisten."
+      ]
+    },
+    "baseline_check": {
+      "title": "Mit einem kurzen Sicherheits-Check beginnen",
+      "steps": [
+        "Prüfen Sie, ob eine Bildschirmsperre aktiviert ist.",
+        "Überprüfen Sie die wichtigsten App-Einstellungen zur Privatsphäre.",
+        "Aktivieren Sie – wenn möglich – die Zustimmung der Eltern für App-Installationen."
+      ]
+    }
+  },
+
+  "deviceSpecific": {
+  "mobile": {
+    "label": "Smartphone oder Tablet",
+    "tips": [
+      "Richten Sie eine Bildschirmsperre ein (z. B. PIN oder Fingerabdruck).",
+      "Nutzen Sie Jugendschutzfunktionen wie Bildschirmzeit (Apple) oder Family Link (Android).",
+      "Schauen Sie, welche Apps Zugriff auf Kamera, Mikrofon oder Standort haben.",
+      "Erlauben Sie App-Installationen nur mit Zustimmung der Eltern.",
+      "Deaktivieren Sie – wenn möglich – Installationen aus unbekannten Quellen."
+    ]
+  },
+  "computer": {
+    "label": "Laptop oder Computer",
+    "tips": [
+      "Richten Sie für Ihr Kind ein eigenes Konto ohne Administratorrechte ein.",
+      "Achten Sie darauf, dass Updates und Sicherheitsfunktionen aktiviert sind.",
+      "Nutzen Sie Familien- oder Jugendschutzfunktionen, wenn verfügbar.",
+      "Schauen Sie gemeinsam, welche Programme installiert sind und entfernen Sie Unbekanntes.",
+      "Schauen Sie sich die Sicherheitseinstellungen im Browser an."
+    ]
+  },
+  "console": {
+    "label": "Spielkonsole",
+    "tips": [
+      "Richten Sie Jugendschutzfunktionen ein und vergeben Sie eine PIN.",
+      "Begrenzen Sie Sprachchats mit Unbekannten oder erlauben Sie Chats nur mit Freunden.",
+      "Schauen Sie sich die Privatsphäre-Einstellungen für Anfragen und Nachrichten an.",
+      "Vereinbaren Sie klare Regeln zu Spielzeiten und Online-Kontakten.",
+      "Achten Sie auf Altersfreigaben und passende Inhalte bei Spielen."
+    ]
+  },
+  "smart_tv": {
+    "label": "Smart-TV",
+    "tips": [
+      "Schauen Sie, welche Apps installiert sind, und entfernen Sie Unbekanntes oder Unnötiges.",
+      "Nutzen Sie Inhaltsbeschränkungen oder Jugendschutzfunktionen, wenn verfügbar.",
+      "Achten Sie darauf, dass automatische Updates aktiviert sind.",
+      "Behalten Sie im Blick, welche Inhalte Ihr Kind nutzen kann.",
+      "Sprechen Sie gemeinsam darüber, welche Inhalte geeignet sind."
+    ]
+  },
+  "smartwatch": {
+    "label": "Smartwatch",
+    "tips": [
+      "Schauen Sie, welche Kontakte und Nachrichten erlaubt sind.",
+      "Begrenzen Sie die Kommunikation auf bekannte Kontakte.",
+      "Achten Sie darauf, wann der Standort geteilt wird.",
+      "Sprechen Sie mit Ihrem Kind darüber, wann und mit wem die Uhr genutzt wird.",
+      "Halten Sie die Software der Uhr aktuell."
+    ]
+  },
+  "generic": {
+    "label": "Ihr Gerät",
+    "tips": [
+      "Richten Sie eine Bildschirmsperre ein.",
+      "Achten Sie darauf, dass Updates automatisch installiert werden.",
+      "Schauen Sie regelmäßig nach, welche Apps Zugriff auf wichtige Funktionen haben.",
+      "Sprechen Sie mit Ihrem Kind darüber, wie das Gerät sicher genutzt wird."
+    ]
+  }
+},
+
+  "behavior": {
+    "social_media_safety": {
+      "topic": "Sicherheit in sozialen Medien",
+      "advice": [
+        "Stellen Sie Profile – wenn möglich – auf „Privat“ oder „Nur Freunde“.",
+        "Deaktivieren Sie Standortangaben in Beiträgen und Stories.",
+        "Schauen Sie gemeinsam, wer Ihrem Kind folgt, und entfernen Sie unbekannte Personen.",
+        "Sprechen Sie mit Ihrem Kind darüber, welche Inhalte geteilt werden sollten – und welche besser nicht.",
+        "Begrenzen Sie, wer Ihrem Kind Nachrichten senden kann."
+      ]
+    },
+    "social_media_visibility_check": {
+      "topic": "Sichtbarkeit in sozialen Medien prüfen",
+      "advice": [
+        "Fragen Sie Ihr Kind, welche Apps es nutzt, um Inhalte zu teilen oder mit Freunden zu schreiben.",
+        "Erklären Sie, wer die Beiträge sehen kann und warum private Einstellungen oft sicherer sind.",
+        "Schauen Sie gemeinsam, ob die Konten öffentlich sind, und stellen Sie sie bei Bedarf auf „Privat“ oder „Nur Freunde“."
+      ]
+    },
+    "photo_video_sharing": {
+      "topic": "Fotos und Videos teilen",
+      "advice": [
+        "Achten Sie darauf, dass keine persönlichen Details auf Fotos sichtbar sind.",
+        "Deaktivieren Sie Standortangaben in der Kamera-App und in sozialen Apps.",
+        "Vereinbaren Sie eine einfache Regel: Vor dem Posten kurz gemeinsam nachfragen.",
+        "Sprechen Sie darüber, welche Fotos man besser nicht öffentlich teilt (z. B. Schule, Adresse oder private Orte)."
+      ]
+    },
+    "chat_and_contacts": {
+      "topic": "Chats und Kontakte",
+      "advice": [
+        "Achten Sie darauf, dass Ihr Kind nur mit Personen verbunden ist, die es auch im echten Leben kennt.",
+        "Vereinbaren Sie eine klare Regel: Persönliche Daten wie Adresse, Schule oder Telefonnummer werden nicht online geteilt.",
+        "Ermutigen Sie Ihr Kind, sich bei Ihnen zu melden, wenn sich etwas unangenehm anfühlt.",
+        "Sprechen Sie regelmäßig darüber, mit wem Ihr Kind online Kontakt hat."
+      ]
+    },
+    "gaming_and_chat": {
+      "topic": "Spielen und Chat",
+      "advice": [
+        "Begrenzen Sie Chats – wenn möglich – auf Freunde.",
+        "Deaktivieren Sie Sprachchats mit Unbekannten.",
+        "Erinnern Sie Ihr Kind daran, keine persönlichen Informationen im Chat zu teilen.",
+        "Vereinbaren Sie klare Regeln für Spielzeiten und Online-Kontakte."
+      ]
+    },
+    "public_wifi": {
+      "topic": "Öffentliches WLAN",
+      "advice": [
+        "Deaktivieren Sie die automatische Verbindung zu offenen WLAN-Netzen.",
+        "Vermeiden Sie – wenn möglich – Anmeldungen bei wichtigen Konten über öffentliches WLAN.",
+        "Sprechen Sie mit Ihrem Kind darüber, wann öffentliche WLANs sicher genutzt werden können.",
+        "Wenn Ihr Kind häufig öffentliches WLAN nutzt, können Sie über ein seriöses VPN nachdenken."
+      ]
+    },
+    "healthy_digital_habits": {
+      "topic": "Gesunde digitale Gewohnheiten",
+      "advice": [
+        "Reagieren Sie möglichst nur auf Nachrichten oder Anrufe von bekannten Personen – oder sprechen Sie vorher gemeinsam darüber.",
+        "Teilen Sie Fotos und Videos nur mit Personen, die Ihr Kind kennt und denen es vertraut.",
+        "Wenn eine Nachricht zu schnellem Handeln drängt oder Geheimhaltung verlangt, halten Sie kurz inne und beziehen Sie Ihr Kind ein.",
+        "Neue Kontakte nur annehmen, wenn Ihr Kind die Person persönlich kennt.",
+        "Ermutigen Sie Ihr Kind, sich bei Ihnen zu melden, wenn sich etwas ungewöhnlich oder unangenehm anfühlt.",
+        "Sprechen Sie regelmäßig darüber, was Ihr Kind online erlebt und was sich gut oder unangenehm anfühlt."
+      ]
+    }
+  },
+
+  "conversation": {
+    "tone": {
+      "calm": "Ruhig, verständnisvoll und nicht wertend",
+      "supportive": "Ruhig, unterstützend und ermutigend",
+      "neutral": "Sachlich und klar, ohne Druck aufzubauen"
+    },
+    "base": {
+      "1": "Ich möchte, dass sich dein Gerät für dich sicher anfühlt – schauen wir uns gemeinsam ein paar Einstellungen an?",
+      "2": "Du bist nicht in Schwierigkeiten. Ich bin da, um dich zu unterstützen, wenn sich online etwas komisch oder unangenehm anfühlt.",
+      "3": "Wenn dir jemand online persönliche Fragen stellt – was wäre eine gute und sichere Antwort?",
+      "4": "Du kannst jederzeit zu mir kommen, wenn dir etwas unsicher vorkommt – wir schauen uns das gemeinsam an."
+    },
+    "younger": {
+      "1": "Wenn dir eine fremde Person schreibt – was könnten wir dann gemeinsam tun?",
+      "2": "Du kannst es mir immer sagen – auch wenn du aus Versehen etwas angeklickt hast.",
+      "3": "Wenn dir etwas komisch vorkommt, schauen wir uns das einfach gemeinsam an."
+    },
+    "teen": {
+      "1": "Wenn dich jemand unter Druck setzt, Fotos zu teilen oder dich zu treffen – kannst du es mir sagen. Ich helfe dir, ohne dich zu verurteilen.",
+      "2": "Lass uns gemeinsam festlegen, was online geteilt werden darf und was privat bleibt.",
+      "3": "Wenn dir etwas komisch vorkommt, musst du damit nicht allein bleiben – wir finden gemeinsam eine Lösung."
+    },
+    "incident": {
+      "1": "Danke, dass du es mir gesagt hast. Du hast richtig gehandelt – wir kümmern uns jetzt gemeinsam darum.",
+      "2": "Lass uns gemeinsam schauen, wie wir Beweise sichern und das Konto blockieren oder melden können.",
+      "3": "Du bist nicht allein – wir finden gemeinsam eine gute Lösung."
+    }
+  },
+  "validation": {
+    "required": "Bitte beantworten Sie diese Frage."
+  },
+  "setError": { 
+    "required": "Beim Erstellen des Berichts ist ein Problem aufgetreten. Bitte versuchen Sie es noch einmal." 
+  }
+ }
+}
