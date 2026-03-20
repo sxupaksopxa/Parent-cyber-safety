@@ -32,7 +32,11 @@ const App = () => {
     setAnswersSnapshot(answers);
 
     const result = await submit(answers);
-    if (result) setReport(result);
+    
+    if (result) {
+      setReport(result);
+      window.plausible?.("assessment_completed");
+    }
 
     // Optional: UI testing without any logic
     // setTimeout(() => setReport(mockReport), 600);
@@ -52,6 +56,9 @@ const App = () => {
       const assessment = assessSafety(answersSnapshot);
       const guidance = buildGuidance(assessment, answersSnapshot);
       setReport((prev) => (prev ? { ...prev, ...guidance } : prev));
+
+      window.plausible?.("guidance_requested");
+      
     } catch (e) {
       console.error("Guidance generation error:", e);
       setGuidanceError(t("errors.guidanceGeneration"));
