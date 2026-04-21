@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.parent-cyber-safety.com/sitemap.xml

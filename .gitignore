@@ -5,6 +5,10 @@ logs
 Parent-cyber-safety/
 Parent-cyber-safety-backup04032026/
 
+.DS_Store
+node_modules/
+dist/
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
